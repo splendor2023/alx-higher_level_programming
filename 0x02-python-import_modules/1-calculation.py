@@ -1,20 +1,18 @@
-
 #!/usr/bin/python3
 
-import calculator_1
 
 if __name__ == "__main__":
+
+    from calculator_1 import add, minus, mul, div
+
     a = 10
+
     b = 5
 
-    result_add = calculator_1.add(a, b)
-    print("The sum of {} and {} is: {}".format(a, b, result_add))
+    print("{} + {} = {}".format(a, b, add(a, b)))
 
-    result_subtract = calculator_1.subtract(a, b)
-    print("The difference between {} and {} is: {}".format(a, b, result_subtract))
+    print("{} - {} = {}".format(a, b, minus(a, b)))
 
-    result_multiply = calculator_1.multiply(a, b)
-    print("The product of {} and {} is: {}".format(a, b, result_multiply))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
 
-    result_divide = calculator_1.divide(a, b)
-    print("The division of {} by {} is: {}".format(a, b, result_divide))
+    print("{} / {} = {}".format(a, b, div(a, b)))
